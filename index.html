@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <!-- Rules box start here -->
+    <div class="info_box">
+      <div class="info_title">
+        <h1>Welcome Quiz App</h1>
+      </div>
+      <div class="info_list">
+        <h3>Follow Rules this quiz :-</h3>
+        <p>1. There are 10 Question.</p>
+        <p>2. You will have only <span>30 second</span> per each question.</p>
+        <p>3. Once you select your answer,you can't reselect</p>
+        <p>4. You can't select any option once time goes off.</p>
+        <p>5. You can't exit from the quiz while you're playing.</p>
+        <p>6. You'll get points on the basis of your correct answers.</p>
+        <div class="btn">
+          <button type="button" class="continue">Continue</button>
+        </div>
+      </div>
+    </div>
+    <!-- Rules box end here -->
+
+    <!-- categories box start here -->
+    <div class="categories_box">
+      <div class="logo">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWoM0tGf-nAiQi_LPp3SMcfFPkSngyeTHZtg&usqp=CAU"
+          alt="Testbook logo"
+        />
+      </div>
+      <!-- start top section -->
+      <div class="top_section">
+        <h2 class="heading_style">Hello user!</h2>
+        <h3>Enter your name to continue the quiz.</h3>
+      </div>
+      <div class="user_input">
+        <div class="name_enter">
+          <input
+            type="text"
+            class="input_value"
+            name="value"
+            placeholder="Enter Your Name"
+          />
+        </div>
+        <div class="submit">
+          <button type="button" class="submit_btn" onclick="printname()">
+            Submit
+          </button>
+        </div>
+      </div>
+      <!-- Start middle section -->
+      <div class="mid_section">
+        <h4>
+            <div id="dis_name"></div> 
+            You'll have to 10 seconds to answer each question</h4>
+        <hr class="line" />
+        <h2 class="heading_style">Select Category</h2>
+      </div>
+      <!-- bottom section start here -->
+      <div class="bottom_section">
+        <div class="bottom_btn">
+          <button type="button" class="questionsCategory" data-category="probability">PROBABILITY</button>
+          <button type="button" class="questionsCategory" data-category="pipes">PIPES AND CISTERNS</button>
+          <button type="button" class="questionsCategory" data-category="problem">PROBLEMS ON AGES</button>
+          <button type="button" class="questionsCategory" data-category="profit">PROFIT AND LOSS</button>
+        </div>
+        <!-- bottom section end here -->
+      </div>
+      <div class="back_btn">
+        <button type="button" id="reset">back</button>
+      </div>
+    </div>
+    <!-- categories box end here -->
+
+    <!-- start quiz box -->
+    <div class="question_box"  id="questionsWrapper" hidden>
+      <h1 class="topic_name"><span id="categoryName"></span> Questions</h1>
+      <div class="score_timer">
+        <div id="timer">0:00</div>
+        <div id="score">Score: </div>
+      </div>
+      <fieldset>
+        <legend class="qucount"></legend>
+        <div class="questions"></div>
+      </fieldset>
+      <div class="answer_option">
+        <span type="button" class="option">Ans1</span>
+        <span type="button" class="option">Ans2</span>
+        <span type="button" class="option">Ans3</span>
+        <span type="button" class="option">Ans4</span>
+      </div>
+      <div class="next_btn">
+        <button type="button" id="next" class="btn">
+          Submit
+        </button>
+      </div>
+    </div>
+    <!-- end quiz box -->
+
+    <!-- start result box -->
+    <div class="result_box">
+      <div class="middle">
+        <h2>Quiz Result</h2>
+        <p class="para"  >your result is :- <span class="bold" id="user_name">VVVV</span> </p>
+        <p class="para" >Total Time Taken : <span style="font-weight: bold" id="total_time_taken"></span></p>
+        <p class="para" >Total Question : <span style="font-weight: bold" id="total_questions"> 10</span></p>
+       <p class="para" >Attempt : <span style="font-weight: bold" id="attempted_questions"> 10</span></p>
+        <p class="para" >Correct : <span style="font-weight: bold" id="correct_answers"></span></p>
+        <p class="para" >Wrong : <span style="font-weight: bold" id="wrong_answers"></span></p>
+        <p class="para">Percentage : <span style="font-weight: bold" id="percentage_of_success"></span>
+        </p>
+      </div>
+      <div class="bottom">
+        <button class="restart">Start Again</button>
+        <button class="quit">Go To Home</button>
+      </div>
+    </div>
+    <!-- end result box -->
+
+     <!-- Add javascript here -->
+    <script src="question.js"></script>
+    <script src="index.js"></script>
+    
+   
+  </body>
+</html>
