@@ -64,11 +64,13 @@ homePage.onclick = () => {
   infobox.style.display = "block";
   result_box.classList.remove("activeResult");
   infobox.classList.add("activeInfo");
+  question_box.style.display = "none";
 };
 
 restart.onclick = () => {
   result_box.classList.remove("activeResult");
   categories.classList.add("activeCategories");
+  question_box.style.display = "none";
   que_count = 0;
   que_numb = 1;
 };
