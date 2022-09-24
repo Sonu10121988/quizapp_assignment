@@ -64,13 +64,20 @@ homePage.onclick = () => {
   infobox.style.display = "block";
   result_box.classList.remove("activeResult");
   infobox.classList.add("activeInfo");
-  question_box.style.display = "none";
+   //question_box.style.display = "none";
+   question_box.style.display = "block";
+   infobox.style.width = "55vw";
+   infobox.style.height = "70vh";
+   categories.style.width = "55%";
+   que_count = 0;
+   que_numb = 1;
 };
 
 restart.onclick = () => {
   result_box.classList.remove("activeResult");
   categories.classList.add("activeCategories");
-  question_box.style.display = "none";
+  question_box.style.display = "block";
+  categories.style.width = "60%";
   que_count = 0;
   que_numb = 1;
 };
