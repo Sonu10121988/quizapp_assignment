@@ -60,18 +60,9 @@ reset_categorie.onclick = () => {
 };
 
 // Go back home page function 
-homePage.onclick = () => {
-  infobox.style.display = "block";
-  result_box.classList.remove("activeResult");
-  infobox.classList.add("activeInfo");
-   //question_box.style.display = "none";
-   question_box.style.display = "block";
-   infobox.style.width = "55vw";
-   infobox.style.height = "70vh";
-   categories.style.width = "55%";
-   que_count = 0;
-   que_numb = 1;
-};
+homePage.addEventListener("click", () => {
+  window.location.reload(true);
+ });
 
 restart.onclick = () => {
   result_box.classList.remove("activeResult");

@@ -245,6 +245,9 @@ fieldset {
   background-color: rgb(234, 242, 246);
   color: rgb(10, 166, 227);
   text-align: center;
+  font-weight: bold;
+  font-size: 23px;
+  height: 40px;
 }
 .answer_option span:hover {
   background-color: rgb(27, 177, 237);
@@ -349,18 +352,21 @@ fieldset {
 /* Add the media queries */
 @media  screen and (max-width: 600px) {
   .info_box{
-    width: 96vw;
-    height: 65vh;
+    width: 80vw;
+    height: 50vh;
   }
 }
 @media  screen and (max-width: 600px) {
   .categories_box {
-    width: 578px;
-    height: 680px;
+    width: 80vw;
+    height: 60vh;
   }
   .user_input {
     display: flex;
     flex-direction: column;
+  }
+  .user_input input {
+    width: 330px;
   }
   .bottom_btn {
     display: grid;
@@ -372,17 +378,19 @@ fieldset {
 }
 @media  screen and (max-width: 600px) {
   .question_box {
-    width: 80vw;
-    min-height: 70vh;
+    width: 78vw;
+    min-height: 50vh;
   }
 }
 @media  screen and (max-width: 600px) {
   .result_box{
     width: 96vw;
-    height: 70vh;
+    height: 55vh;
   }
   .bottom button{
     margin: 0px 20px;
+    height: 50px;
+    font-size: 20px;
   }
 }
 
