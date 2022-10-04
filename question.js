@@ -105,7 +105,7 @@ const QUESTIONS = {
       numb: 5,
       question:
         "A tank is filled in 5 hours by three pipes A, B and C.The pipe C is twice as fast as A, how much time will pipe A alone take to fill the tank?",
-      options: ["20 hours", "25 hours", "35 hours", "Cannot be determined"],
+      options: ["20 hours", "25 hours", "35 hours", "45"],
       answer: "35 hours",
     },
     {
