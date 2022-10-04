@@ -351,46 +351,30 @@ fieldset {
 
 /* Add the media queries */
 @media  screen and (max-width: 600px) {
-  .info_box{
-    width: 80vw;
-    height: 50vh;
-  }
+  .info_box {
+    width: 550px;
+    height: auto;
 }
-@media  screen and (max-width: 600px) {
-  .categories_box {
-    width: 80vw;
-    height: 60vh;
-  }
-  .user_input {
-    display: flex;
-    flex-direction: column;
-  }
-  .user_input input {
-    width: 330px;
-  }
-  .bottom_btn {
-    display: grid;
-    grid-template-columns: 1fr ;
-  }
-  .showName{
-    height: 96vh;
-  }
+.categories_box {
+  width: 555px;
+  height: 530px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-@media  screen and (max-width: 600px) {
-  .question_box {
-    width: 78vw;
-    min-height: 50vh;
-  }
+.question_box {
+  width: 96vw;
+  height: auto;
 }
-@media  screen and (max-width: 600px) {
-  .result_box{
-    width: 96vw;
-    height: 55vh;
-  }
-  .bottom button{
-    margin: 0px 20px;
-    height: 50px;
-    font-size: 20px;
-  }
+.result_box{
+  width: 98vw;
+  height: 87vh;
 }
+.bottom button{
+  /* margin: 0px 20px; */
+  height: 50px;
+  font-size: 20px;
+}
+}
+
 
