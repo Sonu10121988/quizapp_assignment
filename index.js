@@ -15,7 +15,6 @@ const option_list = document.querySelector(".answer_option");
 const question_box = document.querySelector(".question_box");
 const reset_categorie = document.querySelector("#reset");
 const result_box = document.querySelector(".result_box");
-const restart = document.querySelector(".restart");
 const timer = document.querySelector("#timer");
 
 //result variable
@@ -59,16 +58,6 @@ reset_categorie.onclick = () => {
 homePage.addEventListener("click", () => {
   window.location.reload(true);
  });
-
-restart.onclick = () => {
-  result_box.classList.remove("activeResult");
-  categories.classList.add("activeCategories");
-  question_box.style.display = "block";
-  categories.style.width = "60%";
-  que_count = 0;
-  que_numb = 1;
-};
-
 
 let categoryContext;
 // This function for every category context
