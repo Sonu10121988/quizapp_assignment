@@ -474,8 +474,9 @@ legend {
   height: 30px;
 }
 .result_box{
-  width: 90vw;
+  width: 91vw;
   height: 92vh;
+  margin: -1px auto;
 }
 .bottom button{
   font-size: 18px;
